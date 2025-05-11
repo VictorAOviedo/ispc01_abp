@@ -1,15 +1,15 @@
-def list_device(lista):
-    return lista
+def list_devices(device_list):
+    return device_list
 
-def search_device(lista, device):
-    return device in lista
+def search_device(device_list, device):
+    return device in device_list
 
-def new_device(lista, device):
-    if device not in lista:
-        lista.append(device)
+def add_device(device_list, device):
+    if device not in device_list:
+        device_list.append(device)
 
-def delete_device(lista, device):
-    if device in lista:
-        lista.remove(device)
+def remove_device(device_list, device):
+    if device in device_list:
+        device_list.remove(device)
     else:
         print("Dispositivo no encontado")
