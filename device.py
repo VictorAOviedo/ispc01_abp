@@ -11,5 +11,3 @@ def add_device(device_list, device):
 def remove_device(device_list, device):
     if device in device_list:
         device_list.remove(device)
-    else:
-        print("Dispositivo no encontado")
